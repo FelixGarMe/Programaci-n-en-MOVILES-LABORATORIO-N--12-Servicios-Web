@@ -1,0 +1,9 @@
+
+	<% HttpSession session = request.getSession(false);
+	if (session == null) { %>
+		<p>No ha iniciado sesión. <a href="login.jsp">Iniciar sesión</a></p>
+	<% } else { %>
+		<h1>Bienvenido <%= session.getAttribute("username") %></h1>
+		<p>Estado: <%= session.getAttribute("status") %></p>
+		<a href="LogoutServlet">Cerrar sesión</a>
+	<% } %>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página con Bootstrap</title>
+	<!-- Link a Bootstrap -->
+	<link rel="stylesheet" 
+            href="webjars/bootstrap/5.2.3/css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+
+	<div class="container">
+	
+		
+		<form name="form" method="post"> <!--DIRECTORIO-->
+			<div class="form-group">
+                            <label for="numero">Ingresa un numero:</label><br>
+                            <input type="text" name="n" class="form-control" id="numero" placeholder="Escribe aqui...">
+			</div><br>
+                        
+                        <button type="submit" formaction="/WebApp03Tarea/pares" class="btn btn-primary">Pares</button>
+			<button type="submit" formaction="/WebApp03Tarea/primos" class="btn btn-secondary" >Primos</button>
+			<button type="submit" formaction="/WebApp03Tarea/tabla" class="btn btn-success" >Tabla</button>
+		</form>
+
+	</div>
+
+	<!-- Link a los archivos de Javascript de Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

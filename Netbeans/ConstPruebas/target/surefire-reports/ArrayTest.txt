@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: ArrayTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
+ArrayTest.testSize()  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.RuntimeException: Uncompilable code - constructor Array in class java.lang.reflect.Array cannot be applied to given types;
+  required: no arguments
+  found:    int[]
+  reason: actual and formal argument lists differ in length
+	at ArrayTest.testSize(ArrayTest.java:1)
+
+ArrayTest.testToString()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.RuntimeException: Uncompilable code - constructor Array in class java.lang.reflect.Array cannot be applied to given types;
+  required: no arguments
+  found:    int[]
+  reason: actual and formal argument lists differ in length
+	at ArrayTest.testToString(ArrayTest.java:1)
+
